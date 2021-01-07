@@ -132,6 +132,13 @@ var CanvasRenderer = function () {
 						ctx.textAlign = 'center';
 					}
 
+				var spacestring = '';
+				for (let index = 0; index < options.space; index++) {
+					spacestring += String.fromCharCode(8202);
+				}
+				//fill with spaces? if so, replace text with spaced text
+				encoding.text = encoding.text.split("").join(spacestring);
+				
 				ctx.fillText(encoding.text, x, y);
 			}
 		}
