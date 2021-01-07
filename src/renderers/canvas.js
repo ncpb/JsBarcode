@@ -81,6 +81,8 @@ class CanvasRenderer{
 	}
 
 	drawCanvasText(options, encoding){
+		
+		console.log('happy days');
 		// Get the canvas context
 		var ctx = this.canvas.getContext("2d");
 
